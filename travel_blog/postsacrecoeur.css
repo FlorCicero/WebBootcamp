@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body{
+  background: #FADFE9;
+}
+.entrada .titulo{
+  color: #CE346E;
+  font-family: "Parisienne";
+  font-size: 25pt;
+}
+
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.entrada img {
+  border: 4px solid #CE346E;
+  height: 800px;
+  width: 700px;
+  max-height: 800px;
+  
+ 
+}
+.leermas1 button{
+  float:left;
+  background: #F76EA2;
+  border:none;
+  color:white;
+}
+
+.entrada p {
+  color: #605E5F;
+  font-family: Sriracha;
+  text-align: justify;
+
+}
+
+.descripcion{
+  color:#897d7d;
+  font-family: Sriracha;
+  text-align: center;
+}
