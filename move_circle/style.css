@@ -1,0 +1,173 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.contenedor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  position: relative;
+  background: #292829;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.colors {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  display: inline-flex;
+}
+
+.button {
+  position: absolute;
+  display: inline;
+  top: 30px;
+  right: 40px;
+  text-align: center;
+  user-select: none;
+}
+
+.arrow:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+.diagonal:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.colors div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.arrow.up {
+  transform: rotate(90deg);
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.arrow.right {
+  transform: rotate(180deg);
+  margin-left: 6px;
+}
+
+.arrow.down {
+  transform: rotate(270deg);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.arrow.left {
+  display: block;
+}
+
+.playPause {
+  background: url("aleatorio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.playPause:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+.random {
+  display: flex;
+  right: 53px;
+  top: 102px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.diagonal {
+  width: 20px;
+  height: 20px;
+  background: rebeccapurple;
+  color: white;
+  display: inline-blockflex;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.diagonal.up-left span {
+  transform: rotate(45deg);
+  display: block;
+}
+
+.diagonal.up-right span {
+  transform: rotate(135deg);
+  display: block;
+}
+
+.diagonal.down-right span {
+  transform: rotate(225deg);
+  display: block;
+}
+
+.diagonal.down-left span {
+  transform: rotate(315deg);
+  display: block;
+}
+
+.segment {
+  display: flex;
+}
+
+.segment.down {
+  margin-top: 5px;
+}
+
+.empty {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
